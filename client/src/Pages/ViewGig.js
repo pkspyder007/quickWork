@@ -19,7 +19,7 @@ class ViewGig extends React.Component {
     let hash = this.props.location.hash;
     let gigID = hash.split("#")[1];
     axios
-      .post("//localhost:3000/gigs/getOne", { gigID })
+      .post("/gigs/getOne", { gigID })
       .then(res => {
         console.log(res.data);
         this.setState({ gig: res.data.gig });
@@ -37,7 +37,7 @@ class ViewGig extends React.Component {
       gigID
     };
     axios
-      .post("//localhost:3000/gigs/acceptGig", gig)
+      .post("/gigs/acceptGig", gig)
       .then(res => {
         if (res.data.success) {
           this.props.history.push("/gigs");

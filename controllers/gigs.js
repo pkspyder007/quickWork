@@ -16,7 +16,7 @@ exports.add = (req, res) => {
 
 exports.getAll = (req, res) => {
   Gig.find({})
-    .then(gigs => {
+    .then(gigs => {      
       res.json({ success: true, gigs });
     })
     .catch(err => {

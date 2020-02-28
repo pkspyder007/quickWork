@@ -21,8 +21,9 @@ class Gigs extends Component {
     };
   }
   componentDidMount() {
-    axios.get('//localhost:3000/gigs/allGigs')
+    axios.get('/gigs/allGigs')
       .then(res => {
+        console.log(res)
         this.setState({ gigs: res.data.gigs });
       })
       .catch(err => {

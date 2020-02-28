@@ -15,7 +15,7 @@ class Signup extends React.Component {
 
     let { name, email, password } = this.state;
     axios
-      .post("//localhost:3000/auth/add", {
+      .post("/auth/add", {
         name: name,
         email: email,
         password: password
