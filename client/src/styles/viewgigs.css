@@ -1,0 +1,21 @@
+#view-gig {
+  margin: 10px;
+  padding: 15px;
+  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
+}
+
+#title {
+  font-size: 2em;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#gig-card > p {
+  font-size: 1.1em;
+  padding: 5px 0px 5px 0px;
+}
+
+#gig-card > p > span {
+  padding-right: 2px;
+  font-weight: bold;
+}
